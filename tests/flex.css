@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0;
+	background-color: forestgreen;
+	color: whitesmoke;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+li {
+	padding: 5px;
+	list-style: none;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+}
+
+div {
+	width: 16.5vw;
+	padding: 10px;
+	margin: 10px;
+	background-color: darkseagreen;
+}
+
+img {
+	width: 100%;
+	margin: auto;
+}

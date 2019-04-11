@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#flex-accordion {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	color:antiquewhite;
+	background-color: darkolivegreen;
+}
+
+#flex-accordion section {
+	overflow: hidden;
+	margin: 3px;
+	padding: 3px;
+	cursor: pointer;
+	background-color: darkgreen;
+	/*border:solid red thin;*/
+}
+
+#flex-accordion section:hover {
+	background-color: olive;
+}
+
+/* hides content until revealed*/
+#flex-accordion section p {
+	display: none;
+}
+
+#flex-accordion section:target {
+	background: olive;
+	padding: 10px;
+}
+
+#flex-accordion section:target:hover {
+	background: olive;
+}
+
+#flex-accordion section:target h2 {
+	width: 100%;
+}
+
+#flex-accordion section:target h2 a {
+	color: chartreuse;
+	padding: 0;
+}
+
+/* shows the content after reveal */
+#flex-accordion section:target p {
+	display: block;
+}
+
+#flex-accordion section h2 a {
+	padding: 8px 10px;
+	display: block;
+	font-size: 2em;
+	font-weight: normal;
+	color: darkkhaki;
+	text-decoration: none;
+}
+
+.horizontal section {
+	width: 5%;
+	-moz-transition: width 0.2s ease-out; 
+	-webkit-transition:width 0.2s ease-out;
+	-o-transition:width 0.2s ease-out;
+	transition:width 0.2s ease-out;
+}
+
+.horizontal section h2 {
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	width:240px; 
+	position:relative; 
+	left:-100px; 
+	top:85px;
+}
+
+/*On mouse over open slide*/
+.horizontal :target{ 
+	width:73%;
+	height:230px;
+}
+
+.horizontal :target h2{ 
+	top:0px;
+	left:0;
+	-webkit-transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg); 
+}

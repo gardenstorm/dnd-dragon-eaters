@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* CSS Document */
+/* Seeing if details can be used as accordion */
+
+@media screen and (orientation: landscape) {
+    details {
+        float: left;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    details {
+        float: none;
+    }
+}
